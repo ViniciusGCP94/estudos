@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuvas de Meteoros</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Chuvas de Meteoros</h1>
+    <form id="form-chuva">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="inicio">Data de Início:</label>
+        <input type="text" id="inicio" name="inicio" placeholder="DD/MM" required>
+
+        <label for="fim">Data de Fim:</label>
+        <input type="text" id="fim" name="fim" placeholder="DD/MM" required>
+
+        <button type="submit">Adicionar Chuva</button>
+    </form>
+
+    <ul id="lista-chuvas"></ul>
+
+    <script type="module" src="/functions/lista-de-chuvas.js"></script>
+</body>
+</html>

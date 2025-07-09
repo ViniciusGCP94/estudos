@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 8vh;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+.hero {
+    width: 100%;
+    padding: 40px 0;
+    background-image: url('../imagens/bahia.jpg');
+    background-size: cover;
+}
+
+.hero .wrapper {
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+}
+
+.hero .wrapper .head-form {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+    background-color: #5d15d1;
+}
+
+.head-form img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.head-form h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.dados-container {
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.dados-container h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, select {
+    height: 32px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+
+.data, .viagem {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.data div, .local, .origem {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio, .checkbox {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio div, .checkbox div {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    margin: 10px 0;
+    gap: 0 10px;
+}
+
+.checkbox {
+    width: 50%;
+}
+
+button {
+    width: 20%;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 8px 10px;
+    background-color: #5d15d1;
+    border: none;
+    border-radius: 5px;
+}
+
+.container h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 8px 0;
+}
+
+.container h3 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.container h3 span {
+    font-weight: bold;
+}
+
+.container .ofertas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 375px;
+    margin-bottom: 50px;
+}
+
+.ofertas .imagem-destaque {
+    margin: auto 0;
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(100% - 10px);
+}
+
+.ofertas .imagem-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ofertas .quatro-imagens{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ofertas .quatro-imagens .imagem {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+}
+
+.ofertas .quatro-imagens .imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ofertas .quatro-imagens .imagem figcaption, .ofertas .imagem-destaque figcaption {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    padding: 5px 10px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.anuncio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maranhao, .goiania {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.maranhao img, .goiania img {
+    width: 100%;
+    height: 100%;
+}
+
+.maranhao div, .goiania div {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.maranhao div h3, .goiania div h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.maranhao div p, .goiania div p {
+    font-size: 16px;
+    margin-top: 10px;    
+}
+
+footer {
+    width: 100vw;
+    margin-top: 32px;
+    background-color: #5d15d1;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato, .redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.contato h2, .redes-sociais h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.contato div, .redes-sociais div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contato div img, .redes-sociais div img {
+    width: 18px;
+}
+
+.contato div span, .redes-sociais div span {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+

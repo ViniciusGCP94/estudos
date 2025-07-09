@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 15vh;
+    background-color: #000000;
+    border-bottom: 5px solid #ffd700;
+}
+
+.title {
+    color: #ff0000;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/wall.png");
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #000000;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    background-color: #00ffff;
+}
+
+.enemy {
+    background-color: #290303;
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-lives h2 {
+    padding-left: 10px;
+}
+
+/* :nth-child(2) "nth(2)=Segundo -- child = filho*/
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+}

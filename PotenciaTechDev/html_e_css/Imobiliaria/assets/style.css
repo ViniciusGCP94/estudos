@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 200 a 1000 */
+    font-style: normal;
+}
+
+header{
+    text-align: center;
+    background-color: #B0DDFC;
+    padding-bottom: 15px;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav{
+    width: 400px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    font-weight: 800;
+    list-style: none;
+    cursor: pointer;
+    padding: 2px 15px;
+}
+
+li:hover{
+    color: #ffffff;
+    background-color: #2081B9;
+    border-radius: 20px;
+}
+
+.Banner img{
+    width: 100%;
+}
+
+.logo-hero{
+    display: none;
+}
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.sobre h2 {
+    color: #2081B9;
+    font: 28px;
+    font-weight: 600;
+}
+
+.sobre img{
+    margin-top: 20px;
+    width: 40%;
+}
+
+.sobre .texto{
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.sobre .texto span{
+    font-weight: 700;
+    color: #2081B9;
+}
+
+.servicos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2081B9;
+}
+
+.servicos .content {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos .content h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color:#ffffff;
+    text-align: center;
+}
+
+.servicos .content p {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.servicos .content p span {
+    font-weight: 700;
+    color: #E5F55B;
+
+}
+
+.servicos .content .lista {
+    width: 30%;
+    margin-top:30px;
+    margin-left: 100px;
+    flex-direction: column;
+}
+
+.servicos .lista li {
+    font-size: 25px;
+    margin-top: 8px;
+    color: #ffffff;
+    list-style: disc;
+}
+
+.corretores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.corretores h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #2081B9;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.corretores img {
+    width: 45%;
+}
+
+.corretores p {
+    width: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px;
+}
+
+.corretores p span {
+    font-weight: 700;
+    color: #2081B9;
+}
+
+.corretores p a {
+    font-size: 20px;
+    color: blue;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2081B9;
+}
+
+.contato h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contato .maps iframe{
+    width: 800px;
+    height: 300px;
+}
+
+.contato p {
+    width: 90%;
+    margin: 20px 0;
+    padding: 10px 30px ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: justify;
+    letter-spacing: 0.3px;
+    background-color: black;   
+}
+
+.contato p span {
+    font-weight: 800;
+    color: #E5F55B;
+}
+
+.contato .lista {
+    display: block;
+}
+
+.contato .link {
+    font-size: 18px;
+    margin-top: 8px;
+    text-align: center;
+    color: #2081B9;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.contato .link:hover {
+    border-radius: none;
+    background-color: black;
+    color: #B0DDFC;
+}
+
+.contato a:hover {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@media  (max-width: 835px)  {
+    header{
+        padding-top: 50px;
+        background-color: #B0DDFC;
+    }
+
+    nav {
+        width: 600px ;
+    }
+
+    nav ul li {
+        font-size:25px ;
+    }
+
+    .Hero {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        padding-top: 20px;
+        background-color: #B0DDFC;
+    }
+
+    .Hero .Banner {
+        height: 60vh;
+        text-align: center;
+    }
+
+    .sobre{
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre .texto {
+        width: 85%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .servicos {
+        height: 55vh;
+    }
+
+    .servicos .content {
+        width: 90%;
+        height: 95%;
+        justify-content: center;
+    }
+
+    .corretores {
+        height: 45vh;
+        padding-top: 20px;
+    }
+
+    .corretores p {
+        width: 85%;
+        text-align: center;
+    }
+
+    .contato {
+        height: 70vh;
+    }
+
+    .contato .maps {
+        width: 90%;
+    }
+
+    .contato .maps iframe {
+        width: 100%;
+    }
+
+    .contato .cta {
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .Hero{
+        height: 35vh;
+    }
+    .sobre{
+        height: 55vh;
+    }
+
+    .corretores {
+        height: 55vh;
+    }
+
+    .contato {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 500px) {
+    header{
+        width: 100vw;
+        height: 25%; 
+        display: flex; 
+        justify-content: space-between;
+        padding: 0; 
+        margin: 0;
+    }
+
+    header .logo {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    nav {
+        width: 100px;
+        height: 100px;
+        margin-left: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 8px;
+      }
+      
+      .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        transition: 0.4s;
+      }
+      
+      .menu {
+        display: none;
+        /* Estilize seu menu conforme necessário */
+      }
+      
+      /*.menu.open {
+        display: block;
+        /*Adicione estilos de exibição do menu aqui
+      } */
+
+      .Hero{
+        height: 85vh;
+        flex-direction: column;
+      }
+      .logo-hero {
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo-hero img {
+        width: 50%;
+      }
+
+      .sobre {
+        height: 100vh;
+        padding: 0;
+      }
+
+      .sobre h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      .sobre h2 {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      .sobre img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .sobre .texto {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .servicos {
+        height: 80vh;
+      }
+
+      .servicos h2 {
+        font-size: 40px;
+      }
+
+      .servicos .content p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .servicos .content .lista {
+        width: 55%;
+        margin-left: 30px;
+      }
+
+      .corretores {
+        height: 75vh;
+        padding: 20px ;
+        border: 1px solid red;
+      }
+
+      .corretores h2{
+        margin-top: 10px;
+      }
+
+      .corretores img {
+        width: 100%;
+      }
+
+      .corretores p {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .contato {
+        height: 95vh;
+      }
+
+      .contato p {
+        padding: 0;   
+    }
+}

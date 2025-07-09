@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-header{
+    max-width: 1440px;
+    min-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-header .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-header .logo a{
+    font-size: 30px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.content-header .logo a span{
+    color: #6592c9;
+}
+
+nav .menu {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav .menu li {
+    width: 120px;
+    text-align: center;
+}
+
+nav .menu li:hover{
+    padding: 8px;
+    border: 2px solid #6592c9;
+}
+
+nav .menu li a {
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav .menu li a:hover {
+    color: #6592c9;
+}
+
+main .banner {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/img-fundo.jpg');
+    background-size: cover;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 450px;
+    height: 200px;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #0a9077b3;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.text h1 {
+    font-size: 50px;
+}
+
+.text p {
+    font-size: 24px;
+}
+
+.welcome-limit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.welcome-limit .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18vh;
+}
+
+.description h2 {
+    color: #3d3d3d;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.description p {
+    color: #3d3d3d;
+    font-size: 16px;
+}
+
+.welcome-limit .room-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    min-width: 1024px;
+    gap: 40px;
+}
+
+.room-container .room {
+    width: 25%;
+    text-decoration: none;
+    color: #3d3d3d;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00836a;
+}
+
+.room img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.room a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.route{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+    text-align: center;
+}
+
+.route .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14vh;   
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14vh;   
+}
+
+.about .card-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card-container .card {
+    flex: 1 0 350px; /*flex-grow - flex-shrink - flex-basis */
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+    border:4px solid #f1f1f1;
+    border-radius: 4px;
+  }
+
+  .card .description {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card-img {
+    width: 30%;
+    height: 100%;
+  }
+
+  .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*O conteúdo é dimensionado para cobrir completamente o contêiner, mantendo a        proporção original do conteúdo. Isso pode resultar em partes do conteúdo sendo cortadas para ajustar-se ao contêiner.*/
+  }
+
+  footer {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #49997d;
+  }
+
+  .limit-footer{
+    max-width: 1024px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .limit-footer .contato{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+
+  .contato h2 {
+    font-size: 22px;
+  }
+
+  .contato a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .contato a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contato a p {
+    margin-left: 10px;
+  }
+
+  .copyright {
+    width: 73%;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #3b7863;
+  }
+

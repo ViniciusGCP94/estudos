@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100vw;
+    background-color: #fff;
+}
+
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #00cad1;
+}
+
+ .container-header {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 75%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-header .menu{
+    min-width: 450px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.container-header .menu li {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container-header .menu a {
+    color: #e3f8f8;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 3px;
+}
+
+.container-header .menu a:hover{
+    color: black;
+    font-weight: 600;
+    background-color:#e3f8f8;
+    box-shadow: 5px 5px 5px black;
+}
+
+/***    MAIN    ***/
+
+.banner {
+    width: 100%;
+    height:85vh ;
+    background-image: url('../images/recepcao.png');
+    background-size: cover;
+}
+
+.container-banner {
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container-banner h1 {
+    width: 45%;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sobre{
+    margin-top: 50px;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.text {
+    width: 55%;
+    color: #0000008c;
+    text-align: center;
+}
+
+.beneficios {
+    display: flex;
+    align-items: center;
+    color: #0000008c;
+}
+
+.beneficios-clinica{
+    color: #0000008c;
+}
+
+.beneficios-clinica h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.beneficios-clinica .lista {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.especialidades {
+    padding: 30px 0 0px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cards-container .card {
+    width: 28%;
+    box-shadow: 5px 5px 15px #4e504c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cards-container .card img {
+    width: 100%;
+}
+
+.cards-container .card h4 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0000008c;
+}
+
+.especialidades .container a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 25px;
+    text-align: center;
+    background-color: #00cad1;
+    border-radius: 5px;
+    border: 1px solid #00cad1;
+}
+
+.especialidades .container a:hover {
+    font-weight: 600;
+    color: #00cad1;
+    background-color: #fff;
+    border: 1px solid #00cad1;
+    box-shadow: 5px 5px 5px #00cad1;
+}
+
+.contato .container .text {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p {
+    padding: 10px;
+}
+
+.text p span {
+    font-weight: 700;
+}
+
+.rota {
+    width: 100%;
+}
+
+footer{
+    background-color: #00cad1;
+}
+
+.container-footer{
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px 0 10px;
+}
+
+.container-footer .logo{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-footer .contato-info {
+    color: #fff;
+    padding: 15px;
+}
+
+.contato-info p {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px;
+}
+
+
+/*****   RESPONSIVIDADE    *****/
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    
+    .container-header .logo {
+        width: 25%;
+        height: 50%;
+        margin-left: 30px;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .container-header .menu {
+        min-width: 320px;
+        padding: 5px 5px;
+    }
+
+    .container-header .menu li {
+        font-size: 25px;
+    }
+
+    .container-header .menu a {
+        padding: 2px 10px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .container-banner h1 {
+        width:100%;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 20vh;
+    }
+
+    .container-header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .container-header .logo {
+        width: 40%;
+        height: 50%;
+        justify-content: center;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .logo img {
+        padding: 0 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .container-header .menu {
+        min-width: 380px;
+        width: 90%;
+    }
+
+    .container-header .menu li {
+        font-size: 25px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .container-banner h1 {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .container-footer .logo{
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    header{
+        height: 20vh;
+    }
+    
+    .container-header{
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-header .logo {
+        width: 80%;
+        height: 40%;
+    }
+    
+    .container-header .menu {
+        min-width: 310px;
+        width: 90%;
+    }
+
+    .container-header .menu li {
+        font-size: 18px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+        background-image: url('../images/recepcao2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container-banner h1 {
+        width:100%;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .container .text {
+        width: 90%;
+    }
+
+    .imagem-beneficios img {
+        display: none;
+    }
+
+    .beneficios-clinica {
+        width: 100%;
+    }
+
+    .beneficios-clinica h3 {
+        text-align: center;
+    }
+
+    .beneficios-clinica .lista li{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .especialidades {
+        padding-top: 0;
+    }
+
+    .especialidades .container .text h2{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .especialidades .container .text p{
+        width: 100%;
+        margin: auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .cards-container .card {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    
+    .container-header{
+        gap: 10px;
+    }
+
+    .container-header .menu {
+        min-width: 310px;
+        width: 90%;
+        padding: 5px 2px ;
+        justify-content: space-between;
+    }
+
+    .container-header .menu li a {
+        padding: 2px 8px;
+    }
+
+    .especialidades .container .text p{
+        width: 100%;
+        padding: 8px 0 ;
+        margin: auto;
+    }
+}
+
+

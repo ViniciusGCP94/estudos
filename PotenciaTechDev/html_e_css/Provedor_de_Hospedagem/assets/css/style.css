@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo .descricao{
+    width: 65%;
+}
+
+.logo .descricao span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo .descricao p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2f86d6;
+}
+
+header nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+header nav .menu li a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #233032;
+}
+
+header nav .menu li a:hover{
+    border: 1px solid #2f86d6;
+    border-radius: 20px;
+}
+
+main{
+    width: 100vw;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    padding: 0 130px ;
+    display: flex;
+    align-items: center;
+    background-color: #2f86d6;
+}
+
+.banner .info {
+    width: 50%;
+    height: 300px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.banner .info p {
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+
+.banner .info h2 {
+    font-size: 28px;
+}
+
+.banner img {
+    height: 420px;
+}
+
+.ads {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23303E;
+}
+
+.ads .info {
+    color: #fff;
+}
+
+.ads .info h2{
+    font-size: 25px;
+}
+
+.ads .button {
+    width: 240px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #2f86d6;
+}
+
+.ads .button img {
+    height: 20px;
+}
+
+.ads .button a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.informacoes {
+    padding: 100px 0;
+}
+
+.informacoes h2 {
+    width: 70%;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
+}
+
+section h2 span {
+    color: #2f86d6;
+}
+
+
+.cards {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.cards .card {
+    width: 350px;
+    height: 250px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card p {
+    width: 95%;
+}
+
+.planos {
+    padding: 100px 0px;
+    background-color: #f1f3f7;
+}
+
+.planos h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 32px;
+}
+
+table {
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 0px 2px 40px 15px rgba(47,134,214,1);
+}
+
+table thead th {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+table thead th h3 {
+    margin-bottom: 20px;
+}
+
+table thead th img {
+    width: 100px;
+    margin: auto;
+}
+
+table thead th p {
+    max-width: 150px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #a89f9f;
+}
+
+table tbody td {
+    width: 250px;
+    max-width: 1024px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.linha-impar {
+    background-color: #f6f6f6;
+}
+
+.linha-par {
+    background-color: #fff;
+}
+
+.second-ads {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2f86d6;
+}
+
+.second-ads .info {
+    color: #fff;
+    margin-right: -150px;
+}
+
+.second-ads .button {
+    width: 240px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #23303E;
+}
+
+.second-ads .button img {
+    height: 20px;
+}
+
+.second-ads .button a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contatos {
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer .logo{
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #f1f3f7;
+}
+
+.copyright span {
+    color: #2f86d6;
+}

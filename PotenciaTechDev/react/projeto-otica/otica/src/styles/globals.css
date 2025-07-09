@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tahoma', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --light-purple: #F8F7FF;
+  --light-grey: #F6F6F6;
+  --medium-grey: #C4C4C4;
+  --dark-grey: #4a4a4a;
+  --black: #000000;
+  --midnight: #05031b;
+}
