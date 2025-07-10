@@ -10,25 +10,29 @@
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 6px #298f77;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #107059;
 }
 
 .card img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  border: 2px solid #fff;
   margin-bottom: 10px;
 }
 
 .card h2 {
   margin: 10px 0;
   font-size: 20px;
+  color: black;
+  text-shadow: #aeb1b0 3px 3px 3px;
 }
 
 .card p {
   margin: 5px 0;
-  color: #666;
+  color: #fff;
 }
 
