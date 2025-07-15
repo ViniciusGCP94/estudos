@@ -4,7 +4,6 @@ import TextComponents from './components/textComponents.jsx'
 import { SecondTitle, ThirdTitle } from './components/OtherComponent.jsx'
 import Events from './components/Events.jsx'
 import CssInlineComponent from './components/MyCSSComponent/myCssInline.jsx'
-import Counter from './components/Counter.jsx'
 
 
 function App() {
@@ -12,9 +11,6 @@ function App() {
 
   return (
     <>
-
-        <h2>contador</h2>
-        <Counter />
 
 
         <h2>Eventos</h2>
