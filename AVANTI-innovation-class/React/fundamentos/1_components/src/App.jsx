@@ -13,28 +13,27 @@ function App() {
 
   return (
     <>  
+      {/*Contador */}
+      <h2>contador</h2>
+      <Counter />
+      <hr />
 
-        <h2>Quantidade do Produto</h2>
-        <ProductQuantity />
+      {/* Controle de Qualidade do Produto */}
+      <h2>Quantidade do Produto</h2>
+      <ProductQuantity />
+      <hr />
 
-        <h2>contador</h2>
-        <Counter />
-
-
-        <h2>Eventos</h2>
-        <Events />
-
-        <h2>Meu CSS</h2>
-        <CssInlineComponent />
-
-
-
-        <TextComponents text="Meu Primeiro h1" descricao="descrição do Primeiro título"/>
-        <TextComponents text="Meu Segundo h1" descricao="descrição do Segundo título"/>
-        <TextComponents text="Meu Terceiro h1" descricao="descrição do Terceiro título"/>
-        <SecondTitle />
-        <ThirdTitle />
-        
+      
+      <h2>Eventos</h2>
+      <Events />
+      <h2>Meu CSS</h2>
+      <CssInlineComponent />
+      <TextComponents text="Meu Primeiro h1" descricao="descrição do Primeiro título"/>
+      <TextComponents text="Meu Segundo h1" descricao="descrição do Segundo título"/>
+      <TextComponents text="Meu Terceiro h1" descricao="descrição do Terceiro título"/>
+      <SecondTitle />
+      <ThirdTitle />
+      
     </>
   )
 }

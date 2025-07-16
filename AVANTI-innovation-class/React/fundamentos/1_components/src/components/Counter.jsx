@@ -1,11 +1,15 @@
 // boilerplate automatico racfe
 //importar hook useState
 
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 
 const Counter = () => {
     const [counter, setCounter] = useState(0)
+
+    useEffect(() => {
+        document.title = `Contador: ${counter}`; // Atualiza o título do documento com o valor do contador
+    },[counter])
     
     const increment = () => {
         setCounter((prevState) => prevState + 1);
