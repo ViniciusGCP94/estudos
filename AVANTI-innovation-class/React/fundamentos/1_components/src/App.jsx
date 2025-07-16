@@ -6,6 +6,7 @@ import Events from './components/Events.jsx'
 import CssInlineComponent from './components/MyCSSComponent/myCssInline.jsx'
 import Counter from './components/Counter.jsx'
 import ProductQuantity from './components/ProductQuantity.jsx'
+import GithubUser from './components/GithubUser.jsx'
 
 
 function App() {
@@ -21,6 +22,12 @@ function App() {
       {/* Controle de Qualidade do Produto */}
       <h2>Quantidade do Produto</h2>
       <ProductQuantity />
+      <hr />
+
+
+      {/* GithubUser */}
+      <h2>Usuário Github</h2>
+      <GithubUser />
       <hr />
 
       
