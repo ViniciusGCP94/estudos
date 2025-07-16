@@ -1,6 +1,6 @@
 import React from 'react'
 import './MyCSSComponent.css'
-import styles from './MyCSSInline.modules.css'
+import styles from './MyCSSInline.module.css'
 
 const CssInlineComponent = () => {
     const myInlineStyle = {

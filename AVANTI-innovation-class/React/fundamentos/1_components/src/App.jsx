@@ -5,13 +5,17 @@ import { SecondTitle, ThirdTitle } from './components/OtherComponent.jsx'
 import Events from './components/Events.jsx'
 import CssInlineComponent from './components/MyCSSComponent/myCssInline.jsx'
 import Counter from './components/Counter.jsx'
+import ProductQuantity from './components/ProductQuantity.jsx'
 
 
 function App() {
   
 
   return (
-    <>
+    <>  
+
+        <h2>Quantidade do Produto</h2>
+        <ProductQuantity />
 
         <h2>contador</h2>
         <Counter />
