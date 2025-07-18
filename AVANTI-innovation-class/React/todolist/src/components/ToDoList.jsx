@@ -15,7 +15,7 @@ const ToDoList = () => {
     return (
       <div className={styles.container}>
           <h2 className={styles.title}>Lista de Tarefas</h2>
-          <div className={styles.inputContent}>
+          <div className={styles.inputContainer}>
               <input 
                   type='text'
                   placeholder='Adicione uma tarefa'
