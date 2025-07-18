@@ -26,7 +26,10 @@ const ToDoList = () => {
               <button onClick={addTask} className={styles.button}>Adicionar Tarefa</button>
           </div>
           <ul className={styles.taskList}>
-            <li className={styles.taskListItem}>Tarefa</li>
+          {tasks.map((taskItem, index) => (
+            <li key={index} className={styles.taskListItem}>{taskItem}</li>
+          ))}
+            
           </ul>
       </div>
     )
