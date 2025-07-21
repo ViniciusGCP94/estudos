@@ -1,23 +1,24 @@
 import { useState } from "react";
+import styles from "./Modal.module.css"; 
 
 const Modal = () => {
     const [isOpen, setIsOpen] = useState(false)
 
 
     return( 
-        <>
-            <button onClick={() => setIsOpen(true)}>Abrir Modal</button>
+        <div className={styles.container}>
+            <button onClick={() => setIsOpen(true)} className={styles.open__Button}>Abrir Modal</button>
 
             {isOpen && (
-                <div className="modal">
-                    <div className="modal-content">
+                <div className={styles.modal__container}>
+                    <div className={styles.modal__content}>
                         <h2>Este é um Modal</h2>
                         <p>Você pode adicionar qualquer conteúdo aqui.</p>
-                        <button className="close" onClick={() => setIsOpen(false)}>Fechar</button>
+                        <button onClick={() => setIsOpen(false)} className={styles.close__Button}>Fechar</button>
                     </div>
                 </div>
             )}
-        </>
+        </div>
     )
 };
 
