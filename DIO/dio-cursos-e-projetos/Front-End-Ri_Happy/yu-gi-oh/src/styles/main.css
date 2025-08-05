@@ -204,43 +204,18 @@ img:hover {
     }
 }*/
 
-@media screen and (max-height: 480px) and (orientation: landscape) {
-    /* Ajuste do container geral */
+@media screen and (max-width: 480px) {
+    
     .container {
-        display: flex;
-        flex-direction: row; /* Mantém as colunas lado a lado */
-        height: 100vh; /* Ocupa a altura total da tela */
-        gap: 1rem; /* Espaçamento entre as colunas */
+        flex-direction: column;
     }
 
-    /* Coluna da esquerda */
     .container-left {
-        flex: 1; /* Ajuste proporcional (ocupa 1 parte do layout) */
-        max-width: 25%; /* Limita a largura */
-        height: auto; /* Ajuste dinâmico de altura */
-        padding: 1rem; /* Adiciona espaçamento interno */
+        width: 100%;
+        min-width: 250px;
+        height: 20%;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    /* Coluna da direita */
-    .container-right {
-        flex: 3; /* Ajuste proporcional (ocupa 3 partes do layout) */
-        display: flex;
-        flex-wrap: wrap; /* Permite que as cartas se ajustem ao espaço disponível */
-        justify-content: center; /* Centraliza os itens horizontalmente */
-        gap: 0.5rem; /* Espaçamento entre cartas */
-    }
-
-    .card-box__container {
-        width: 98%;
-    }
-
-    .card-versus__container {
-        height: 100px;
-    }
-
-    /* Ajustes nas cartas */
-    .card-infield {
-        height: 6rem; /* Altura ajustada */
-        width: 4rem; /* Largura ajustada */
-    }
 }
