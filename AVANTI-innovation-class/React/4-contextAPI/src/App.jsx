@@ -6,6 +6,7 @@ function App() {
     return (
       <>
         {/*<SemContext />*/}
+        <h1>Context API</h1>
       </>
     )
     

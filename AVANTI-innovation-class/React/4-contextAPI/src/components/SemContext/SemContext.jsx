@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './SemContext/Header'
-import Content from './SemContext/Content'
+import Header from './children/Header'
+import Content from './children/Content'
 import { useState } from 'react'
 
 const SemContext = () => {
