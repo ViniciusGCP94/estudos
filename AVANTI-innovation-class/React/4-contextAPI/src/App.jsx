@@ -1,13 +1,14 @@
-
 import './App.css'
+{/*import SemContext from './components/SemContext'*/}
 
 function App() {
 
-  return (
-    <>
-      
-    </>
-  )
+    return (
+      <>
+        {/*<SemContext />*/}
+      </>
+    )
+    
 }
 
 export default App
