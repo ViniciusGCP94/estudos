@@ -44,14 +44,17 @@
 /* App.css */
 .app {
   transition: all 0.3s ease;
+  padding: 10px;
 }
 
-.app.light {
+.app.light,
+.app.claro {
   background-color: #ffffff;
   color: #000000;
 }
 
-.app.dark {
+.app.dark,
+.app.escuro {
   background-color: #1a1a1a;
   color: #ffffff;
 }

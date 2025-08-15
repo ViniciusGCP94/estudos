@@ -1,12 +1,31 @@
+import { ThemeProvider, useTheme } from './components/ThemeContext/ThemeContext'
+import Header from './components/ThemeContext/Header'
+import Content from './components/ThemeContext/Content'
 import './App.css'
+
 {/*import SemContext from './components/SemContext'*/}
+
+const ThemedApp = () => {
+  const { theme } = useTheme()
+
+  return(
+    <div className={`app ${theme}`}>
+      <Header />
+      <Content>
+      </Content>
+    </div>
+  )
+}
+
 
 function App() {
 
     return (
       <>
         {/*<SemContext />*/}
-        <h1>Context API</h1>
+        <ThemeProvider>
+         <ThemedApp></ThemedApp>
+        </ThemeProvider>
       </>
     )
     
